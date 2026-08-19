@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
   <header class="header">
     <div class="container header-inner">
       <a href="#" class="logo">Palmetto Laser Creations</a>
@@ -27,7 +26,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
@@ -37,7 +35,6 @@
     </div>
   </section>
 
-  <!-- About / Spiel -->
   <section id="about" class="about">
     <div class="container">
       <div class="about-grid">
@@ -53,57 +50,59 @@
     </div>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Gallery</h2>
       <p class="section-intro">Tiles, coasters, boards, flasks—each one laser-etched with care.</p>
-      
       <div class="gallery-grid">
         <figure class="gallery-item large">
           <img src="images/display-table.jpg" alt="Table display of slate coasters, flask, and engraved tiles" loading="lazy">
           <figcaption>A working table of recent pieces</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/tree-island-tile.jpg" alt="White ceramic tile with a lone tree on a rocky island under a dark sun" loading="lazy">
           <figcaption>Lone tree under the moon</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/slate-sc-gamecocks.jpg" alt="Slate coasters featuring the South Carolina palmetto and crescent and the Gamecocks logo" loading="lazy">
           <figcaption>Palmetto pride & Gamecocks</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/tiles-collection-1.jpg" alt="Collection of engraved tiles including Native American portrait, Tree of Life with runes, birds and fish, and Celtic knotwork" loading="lazy">
           <figcaption>Culture, nature & knotwork</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/tiles-collection-2.jpg" alt="Tiles featuring optical illusion, Tree of Life, Chinese dragon character, and Celtic triskele" loading="lazy">
           <figcaption>Symbols across cultures</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/bamboo-boards.jpg" alt="Bamboo cutting boards and paddles engraved with Tree of Life and Celtic designs" loading="lazy">
           <figcaption>Bamboo boards & serving paddles</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/celtic-board-closeup.jpg" alt="Close-up of intricate Celtic knotwork laser engraved on a bamboo cutting board" loading="lazy">
           <figcaption>Intricate Celtic detail</figcaption>
         </figure>
-
         <figure class="gallery-item">
           <img src="images/flask-deer.jpg" alt="Stainless steel flask wrapped in leather with a laser-engraved standing deer" loading="lazy">
           <figcaption>Leather-wrapped flask</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/beetlejuice-portrait.jpg" alt="Ceramic tiles with a high-contrast portrait and a Beetlejuice scene at a skull-marked doorway" loading="lazy">
+          <figcaption>Portrait and Beetlejuice tiles</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/cthulhu-ritual.jpg" alt="Stone-look tile of silhouettes around a fire with a tentacled creature overhead" loading="lazy">
+          <figcaption>Ritual under the tentacles</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/tardis-vortex.jpg" alt="White ceramic tile of a police box flying through a starry time vortex" loading="lazy">
+          <figcaption>Time vortex tile</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
   <section id="services" class="services">
     <div class="container">
       <h2>What I Make</h2>
@@ -128,7 +127,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Get in Touch</h2>
@@ -140,7 +138,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 Palmetto Laser Creations. All rights reserved.</p>
@@ -149,15 +146,12 @@
   </footer>
 
   <script>
-    // Simple mobile menu toggle
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
     toggle.addEventListener('click', () => {
       nav.classList.toggle('open');
       toggle.classList.toggle('open');
     });
-
-    // Smooth close menu on link click
     document.querySelectorAll('.nav a').forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('open');
