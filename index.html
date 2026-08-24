@@ -17,6 +17,7 @@
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
+        <a href="#inventory">Inventory</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -54,7 +55,7 @@
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <p class="section-intro">Tiles, coasters, boards, flasks—each one laser-etched with care. Click any piece to view it larger.</p>
+      <p class="section-intro">A selection of past and current work. Click any piece to view it larger. Interested in something similar? Email to request a custom version or a piece like it.</p>
       <div class="gallery-grid">
         <figure class="gallery-item large" data-full="images/display-table.jpg">
           <img src="images/display-table.jpg" alt="Table display of slate coasters, flask, and engraved tiles" loading="lazy">
@@ -63,10 +64,6 @@
         <figure class="gallery-item" data-full="images/tree-island-tile.jpg">
           <img src="images/tree-island-tile.jpg" alt="White ceramic tile with a lone tree on a rocky island under a dark sun" loading="lazy">
           <figcaption>Lone tree under the moon</figcaption>
-        </figure>
-        <figure class="gallery-item" data-full="images/slate-sc-gamecocks.jpg">
-          <img src="images/slate-sc-gamecocks.jpg" alt="Slate coasters featuring the South Carolina palmetto and crescent and the Gamecocks logo" loading="lazy">
-          <figcaption>Palmetto pride & Gamecocks</figcaption>
         </figure>
         <figure class="gallery-item" data-full="images/tiles-collection-1.jpg">
           <img src="images/tiles-collection-1.jpg" alt="Collection of engraved tiles including Native American portrait, Tree of Life with runes, birds and fish, and Celtic knotwork" loading="lazy">
@@ -92,10 +89,6 @@
           <img src="images/Resized_20260710_134523%203.jpg" alt="Ceramic tile with a vintage black-and-white portrait of a couple" loading="lazy">
           <figcaption>Portraits and fan art</figcaption>
         </figure>
-        <figure class="gallery-item" data-full="images/beetlejuice-portrait.jpg">
-          <img src="images/beetlejuice-portrait.jpg" alt="Ceramic tiles with portrait and Beetlejuice fan art" loading="lazy">
-          <figcaption>Beetlejuice & more</figcaption>
-        </figure>
         <figure class="gallery-item" data-full="images/cthulhu-ritual.jpg">
           <img src="images/cthulhu-ritual.jpg" alt="Stone-look tile of silhouettes around a fire with a tentacled creature overhead" loading="lazy">
           <figcaption>Cthulhu</figcaption>
@@ -104,6 +97,26 @@
           <img src="images/tardis-vortex.jpg" alt="White ceramic tile of a police box flying through a starry time vortex" loading="lazy">
           <figcaption>Dr. Who's Time Vortex</figcaption>
         </figure>
+      </div>
+      <p class="gallery-request">To request a piece like any of these, email <a href="mailto:glasscaster78@gmail.com?subject=Gallery%20request%20-%20Palmetto%20Laser%20Creations">glasscaster78@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <section id="inventory" class="inventory">
+    <div class="container">
+      <h2>Inventory</h2>
+      <p class="section-intro">Ready-to-ship pieces available now. Pay securely through PayPal.</p>
+      <div class="inventory-grid">
+        <article class="inventory-card">
+          <div class="inventory-image">
+            <img src="images/beetlejuice-portrait.jpg" alt="Beetlejuice fan art ceramic tile" loading="lazy">
+          </div>
+          <div class="inventory-body">
+            <h3>Beetlejuice Tile</h3>
+            <p>Ceramic tile with Beetlejuice fan art engraving. Ready to ship.</p>
+            <a class="btn btn-buy" href="https://www.paypal.com/ncp/payment/578GMUA6W9XV2" target="_blank" rel="noopener">Buy with PayPal</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -135,7 +148,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Get in Touch</h2>
-      <p class="section-intro">Ready for a custom piece or have a design in mind? Reach out and let’s make something worth keeping.</p>
+      <p class="section-intro">Ready for a custom piece, a gallery request, or have a design in mind? Reach out and let’s make something worth keeping.</p>
       <div class="contact-box">
         <p>Email: <a href="mailto:glasscaster78@gmail.com">glasscaster78@gmail.com</a></p>
         <p class="note">Based in South Carolina. Custom orders welcome.</p>
@@ -180,7 +193,7 @@
       });
     });
 
-    // Lightbox
+    // Lightbox (gallery only)
     const items = Array.from(document.querySelectorAll('.gallery-item'));
     const lightbox = document.getElementById('lightbox');
     const lbImg = lightbox.querySelector('.lightbox-img');
