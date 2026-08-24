@@ -89,7 +89,7 @@ a:hover {
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .nav a {
@@ -170,6 +170,16 @@ a:hover {
   transform: translateY(-2px);
 }
 
+.btn-buy {
+  background: #0070ba;
+  margin-top: 0.75rem;
+}
+
+.btn-buy:hover {
+  background: #005ea6;
+  color: var(--white);
+}
+
 /* ===== About ===== */
 .about {
   padding: 5.5rem 0;
@@ -213,11 +223,12 @@ a:hover {
 
 /* ===== Gallery ===== */
 .gallery {
-  padding: 5rem 0 6rem;
+  padding: 5rem 0 5rem;
   background: var(--cream);
 }
 
 .gallery h2,
+.inventory h2,
 .services h2,
 .contact h2 {
   font-family: var(--font-serif);
@@ -232,6 +243,9 @@ a:hover {
   color: var(--text-light);
   margin-bottom: 2.5rem;
   font-size: 1.05rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery-grid {
@@ -286,6 +300,69 @@ a:hover {
   border-top: 1px solid var(--border);
   letter-spacing: 0.01em;
   line-height: 1.35;
+}
+
+.gallery-request {
+  text-align: center;
+  margin-top: 2.25rem;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.gallery-request a {
+  font-weight: 500;
+}
+
+/* ===== Inventory ===== */
+.inventory {
+  padding: 5rem 0 5.5rem;
+  background: var(--bg);
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+  gap: 1.75rem;
+  justify-content: center;
+}
+
+.inventory-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(28, 26, 23, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.inventory-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.inventory-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.inventory-body {
+  padding: 1.25rem 1.35rem 1.5rem;
+}
+
+.inventory-body h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+  color: var(--text);
+}
+
+.inventory-body p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
 }
 
 /* ===== Services ===== */
@@ -375,6 +452,10 @@ a:hover {
 .footer-note {
   margin-top: 0.35rem;
   font-size: 0.85rem;
+}
+
+.hit-counter {
+  margin-top: 1.25rem;
 }
 
 /* ===== Lightbox ===== */
@@ -486,6 +567,10 @@ a:hover {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .nav {
+    gap: 1.2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -550,6 +635,7 @@ a:hover {
 
   .about,
   .gallery,
+  .inventory,
   .services,
   .contact {
     padding: 3.8rem 0;
